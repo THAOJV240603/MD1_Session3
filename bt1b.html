@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học viên</title>
+</head>
+<style>
+    .la{
+        border-color: 0;
+        text-align: left;
+        color: blue;
+        width: 80px;
+    }
+</style>
+<body>
+    <form action="" method="post">
+        <table style="width: 500px; padding: 3px; background-color: #FDFCB4;">
+            <tr>
+                <th colspan="2" style="color: blue; background-color: #DFFCDA; text-align: left;">ĐĂNG KÝ HỌC VIÊN</th>
+            </tr>
+            <tr>
+                <td class="la">Họ và tên</td>
+                <td>
+                    <input type="text" placeholder="" name="yourname" value="" size="30px" required>
+                </td>                               
+            </tr>
+            <tr>
+                <td class="la">Ngày sinh</td>
+                <td>
+                    <input type="date" placeholder="" name="birthday" value="" size="15px" required>
+                </td>  
+            </tr>
+            <tr>
+                <td class="la">Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" id="">Nam
+                    <input type="radio" name="gender" id="">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="la">Địa chỉ</td>
+                <td>
+                    <textarea name="address" id="address" rows="3" cols="25"></textarea>
+                </td>                               
+            </tr>
+            <tr>
+                <td class="la">
+                    <label for="class">Lớp</label>
+                </td>
+                <td>
+                    <select placeholder="" name="class" id="class-select">
+                        <option value="">-- Chọn lớp --</option>
+                        <option value="jv">JV</option>
+                        <option value="ft">FT</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="la">Điện thoại</td>
+                <td>
+                        <input type="tel" placeholder="" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" value="" id="" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="la">Email</td>
+                <td>
+                    <input type="email" placeholder="" name="email" value="" size="20px" required>
+                </td>
+            </tr>
+        
+            <tr>
+                <td></td>
+                <td style="text-align: left;">
+                    <button type="submit" name="Summit Form">Đăng ký</button>
+                    <button type="reset" name="Reset Form">Nhập lại</button>
+                </td>
+            </tr>             
+    </table>
+    </form>    
+    
+</body>
+</html>
